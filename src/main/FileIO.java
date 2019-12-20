@@ -69,8 +69,9 @@ public class FileIO {
 			String line;
 			while((line = in.readLine()) != null) {
 				frontWrapper.add(line);
-				if(line.contains("<span id='msg'")) {
+				if(line.contains("<span id='msg'>")) {
 					frontWrapper.add(line);
+					in.readLine();
 					break;
 				}
 			}
