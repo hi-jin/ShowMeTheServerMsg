@@ -21,7 +21,6 @@ public class FileIO {
 	static String filePath = "../../../../var/www/html/index.html";
 	
 	public static void showMsg() {
-		readMsg();
 		for(int i = 0; i < serverMsg.size(); i++) {
 			System.out.println(i+1 + ". " + serverMsg.get(i).replace("      ", ""));
 		}

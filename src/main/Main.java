@@ -11,6 +11,7 @@ public class Main {
 		int selection;
 		Scanner in = new Scanner(System.in);
 		System.out.println("현재 메시지");
+		FileIO.readMsg();
 		FileIO.showMsg();
 		System.out.println("------------------------------------\n어떤 작업을 하시겠습니까?");
 		System.out.println("0. 종료 // 1. 메시지 추가 // 2. 메시지 삭제 // 3. 메시지 전체 삭제 //");
