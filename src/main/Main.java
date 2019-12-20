@@ -15,6 +15,7 @@ public class Main {
 		System.out.println("------------------------------------\n어떤 작업을 하시겠습니까?");
 		System.out.println("0. 종료 // 1. 메시지 추가 // 2. 메시지 삭제 // 3. 메시지 전체 삭제 //");
 		while((selection = in.nextInt()) != 0) {
+			in.nextLine();
 			switch(selection) {
 			case 1:
 				System.out.println("추가할 메시지를 입력하세요.");
